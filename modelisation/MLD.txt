@@ -1,0 +1,3 @@
+utilisateur = (id_utilisateur COUNTER, nom VARCHAR(256), mail VARCHAR(256), prenom VARCHAR(256));
+materiel = (id_materiel COUNTER, designation VARCHAR(256), quantite INT);
+reservation = (id_reservation COUNTER, date_debut DATETIME, date_fin DATETIME, #id_utilisateur*, #id_materiel*);
